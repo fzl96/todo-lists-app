@@ -11,7 +11,6 @@ app.post("/todos", async (req, res) => {
   const { title } = req.body;
   const id = nanoid(6);
 
-  console.log(req.body);
   const newTodo = {
     id,
     title,
